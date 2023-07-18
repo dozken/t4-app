@@ -317,7 +317,7 @@ importers:
   packages/app:
     dependencies:
       '@shopify/flash-list':
-        specifier: ^1.4.3
+        specifier: ^1.5.0
         version: 1.5.0(@babel/runtime@7.22.6)(react-native@0.72.3)(react@18.2.0)
       '@t4/ui':
         specifier: '*'
@@ -484,16 +484,6 @@ packages:
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
-
-  /@babel/generator@7.22.5:
-    resolution: {integrity: sha512-+lcUbnTRhd0jOewtFSedLyiPsD5tswKkbgcezOqqWFUVNEwoUTlpPOBmvhG7OXWLR4jMdv0czPGH5XbflnD1EA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/types': 7.22.5
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.18
-      jsesc: 2.5.2
-    dev: true
 
   /@babel/generator@7.22.9:
     resolution: {integrity: sha512-KtLMbmicyuK2Ak/FTCJVbDnkN1SlT8/kceFTiuDiiRUUSMnHMidxSCdG4ndkTOHHpoomWe/4xkvHkEOncwjYIw==}
@@ -1861,24 +1851,6 @@ packages:
       '@babel/code-frame': 7.22.5
       '@babel/parser': 7.22.7
       '@babel/types': 7.22.5
-
-  /@babel/traverse@7.22.5:
-    resolution: {integrity: sha512-7DuIjPgERaNo6r+PZwItpjCZEa5vyw4eJGufeLxrPdBXBoLcCJCIasvK6pK/9DVNrLZTLFhUGqaC6X/PA007TQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/code-frame': 7.22.5
-      '@babel/generator': 7.22.9
-      '@babel/helper-environment-visitor': 7.22.5
-      '@babel/helper-function-name': 7.22.5
-      '@babel/helper-hoist-variables': 7.22.5
-      '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/parser': 7.22.7
-      '@babel/types': 7.22.5
-      debug: 4.3.4(supports-color@8.1.1)
-      globals: 11.12.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   /@babel/traverse@7.22.8:
     resolution: {integrity: sha512-y6LPR+wpM2I3qJrsheCTwhIinzkETbplIgPBbwvqPKc+uljeA5gP+3nP8irdYt1mjQaDnlIcG+dw8OjAco4GXw==}
@@ -4699,10 +4671,10 @@ packages:
   /@tamagui/babel-plugin@1.43.10(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Qxt/utJO8aamg7lkWi+uZtnk9/GctOjhQ44HHhzGtexMEeUeld66LsfeFf5t0Gcm66XIMXks4HIb1nISvCt/0g==}
     dependencies:
-      '@babel/generator': 7.22.5
+      '@babel/generator': 7.22.9
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/template': 7.22.5
-      '@babel/traverse': 7.22.5
+      '@babel/traverse': 7.22.8
       '@tamagui/simple-hash': 1.43.10
       '@tamagui/static': 1.43.10(react-dom@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
@@ -5208,7 +5180,7 @@ packages:
       '@tamagui/react-native-svg': 1.43.10
       '@tamagui/static': 1.43.10(react-dom@18.2.0)(react@18.2.0)
       babel-loader: 9.1.2(@babel/core@7.22.9)(webpack@5.88.1)
-      browserslist: 4.21.7
+      browserslist: 4.21.9
       css-loader: 6.8.1(webpack@5.88.1)
       esbuild-loader: 3.0.1(webpack@5.88.1)
       esm-resolve: 1.0.8
