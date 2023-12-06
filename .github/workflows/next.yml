@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+      - demo
     paths:
       - 'apps/next/**'
       - 'packages/ui/**'

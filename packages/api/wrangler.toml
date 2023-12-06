@@ -1,16 +1,25 @@
-name = "t4-api"
+name = "t4-app"
 compatibility_date = "2023-10-16"
 send_metrics = false
 node_compat = true
 main = "src/worker.ts"
-account_id = "719e3374c9fabba87860b809acb3c939"
+account_id = "eba78dfc4164b0c4f1f8d8cd8727d321"
+
+[vars]
+APP_URL="https://t4-app.pages.dev"
+JWT_VERIFICATION_KEY="SBiBf3TdKgIhr506/UhiaY76QAeIOpBGFTEIxZ45jz1ifuK7JxKFfRB4PfmDh0eUi3BhArEWNz2yz3tC11qcfQ=="
+
+[[d1_databases]]
+binding = "DB-preview"
+database_name = "preview"
+database_id = "abce02e3-6002-42fc-bb41-c0a52a07e4ee"
+migrations_dir = "migrations"
 
 [[d1_databases]]
 binding = "DB"
 database_name = "production"
-database_id = "aa5e3923-0f1b-469a-8bb8-d10fb866efe0"
+database_id = "706f4876-b15a-426f-aeca-b3c5332f3c38"
 migrations_dir = "migrations"
-
 # The necessary secrets are:
 # - APP_URL - for preventing CORS errors
 # - JWT_VERIFICATION_KEY - for Supabase @link https://supabase.com
