@@ -53,17 +53,17 @@ export const SignUpSignInComponent = ({
         </Button>
         <Button
           size='$5'
-          onPress={() => handleOAuthWithPress('apple')}
+          onPress={() => handleOAuthWithPress('github')}
           hoverStyle={{ opacity: 0.8 }}
           focusStyle={{ scale: 0.95 }}
           borderColor='$gray8Light'
         >
           <SolitoImage
             style={{ width: 22, height: 22 }}
-            src={'/auth/apple-logo.png'}
+            src={'/auth/github-icon.svg'}
             width={22}
             height={22}
-            alt='Apple Logo'
+            alt='Github Logo'
           />
         </Button>
         <Button
