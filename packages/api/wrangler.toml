@@ -5,9 +5,9 @@ node_compat = true
 main = "src/worker.ts"
 account_id = "eba78dfc4164b0c4f1f8d8cd8727d321"
 
-[vars]
-APP_URL="https://t4-app.pages.dev"
-JWT_VERIFICATION_KEY="SBiBf3TdKgIhr506/UhiaY76QAeIOpBGFTEIxZ45jz1ifuK7JxKFfRB4PfmDh0eUi3BhArEWNz2yz3tC11qcfQ=="
+# [vars]
+# APP_URL="https://t4-app.pages.dev"
+# JWT_VERIFICATION_KEY="SBiBf3TdKgIhr506/UhiaY76QAeIOpBGFTEIxZ45jz1ifuK7JxKFfRB4PfmDh0eUi3BhArEWNz2yz3tC11qcfQ=="
 
 [[d1_databases]]
 binding = "DB-preview"

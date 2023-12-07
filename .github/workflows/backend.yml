@@ -44,8 +44,6 @@ jobs:
           command: deploy src/worker.ts
           packageManager: bun
           secrets: |
-            APP_URL
-            JWT_VERIFICATION_KEY
             CI
         env:
           APP_URL: ${{ secrets.NEXT_PUBLIC_APP_URL }}
