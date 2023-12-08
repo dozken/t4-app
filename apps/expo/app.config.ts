@@ -4,10 +4,10 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   extra: {
     eas: {
-      projectId: process.env.EAS_PROJECT_ID || '85fc6ccd-0ce1-4e4d-804c-b15df989f97e',
+      projectId: process.env.EAS_PROJECT_ID,
     },
   },
-  owner: process.env.EAS_OWNER || 'timothymiller',
+  owner: process.env.EAS_OWNER,
   plugins: ['expo-router'],
   experiments: {
     tsconfigPaths: true,
@@ -17,7 +17,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   name: 'T4 App',
   slug: 't4-app',
   updates: {
-    url: 'https://u.expo.dev/85fc6ccd-0ce1-4e4d-804c-b15df989f97e',
+    url: `https://u.expo.dev/${process.env.EAS_PROJECT_ID}`,
   },
   runtimeVersion: {
     policy: 'sdkVersion',
